@@ -19,7 +19,7 @@ class TransferTest extends TestCase
 
     public function testPostTransfer()
     {
-       $this->withoutExceptionHandling();
+       //$this->withoutExceptionHandling();
         $wallet = factory(Wallet::class)->create();
         $transfer = factory(Transfer::class)->create();
 

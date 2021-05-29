@@ -25,7 +25,7 @@ class WallestTest extends TestCase
 
         $response= $this->json('GET','/api/wallet');
         $response->assertStatus(200)
-                ->assertJsonStructure([
+                 ->assertJsonStructure([
                     'id','money','transfers'=>[
                         '*'=>[
                             'id','amount','descripcion','wallet_id'
